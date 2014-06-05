@@ -5,9 +5,9 @@ body{font-family:arial, helvetica, sans-serif; font-size:13px; font-weight:norma
 
 /* Responsive DIV TABLE */
 #wrapper{width:90%; margin:45px auto;}
-.divtable{float:left; width:100%; border:solid 1px #75be2e; background:#75be2e;}
-.divtable .trow{clear:both; width:100%; float:left; margin-bottom:1px; background:#f9fff3;}
-.divtable .trow.head{background:#e3f5d0; font-weight:normal; font-size:1.2em;}
+.divtable{float:left; width:100%; border:solid 0px #75be2e; background:#75be2e;}
+.divtable .trow{clear:both; width:100%; float:left; border-top:dotted 1px #75be2e; background:#f9fff3;}
+.divtable .trow.head{background:#e3f5d0; font-weight:normal; font-size:1.2em; color:#32ad07; text-shadow: 1px 1px #fff;}
 .divtable .trow.head .tcell{height:auto;}
 .divtable .trow .tcell{float:left; padding:12px 8px;}
 .divtable .trow.total{background:transparent}
@@ -15,9 +15,10 @@ body{font-family:arial, helvetica, sans-serif; font-size:13px; font-weight:norma
 .divtable .tcell span{display:none}
 
 @media handheld, only screen and (max-width: 860px) {
+
 	/* Responsive DIV TABLE */
 	.divtable{float:none; width:100%; border:0; font-size:.9em}
-	.divtable .trow{width:100%; float:none; margin-bottom:3px;}
+	.divtable .trow{width:100%; float:none; margin-bottom:3px; border-top:0;}
 	.divtable .trow .tcell{position:relative; text-align:right; float:none; padding:8px 4px; border-bottom:dotted 1px #ccc; width:auto;}
 	.divtable .trow.head{position: absolute; top: -9999px; left: -9999px;}
 	.divtable .trow .tcell.left{text-align:right;}/* override align for mobile */

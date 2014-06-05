@@ -17,8 +17,10 @@ body{font-family:arial, helvetica, sans-serif; font-size:13px; font-weight:norma
 @media handheld, only screen and (max-width: 860px) {
 
 	/* Responsive DIV TABLE */
-	.divtable{float:none; width:100%; border:0; font-size:.9em}
-	.divtable .trow{width:100%; float:none; margin-bottom:3px; border-top:0;}
+	.divtable{float:none; width:100%; border:0; font-size:.9em; background:#999;}
+	.divtable .trow{width:100%; float:none; margin-bottom:1px; border-top:0;}
+	.divtable .trow.first{border-top:solid 1px #999}
+	.divtable .trow.last{margin-bottom:0; border-bottom:solid #fff 12px;}
 	.divtable .trow .tcell{position:relative; text-align:right; float:none; padding:8px 4px; border-bottom:dotted 1px #ccc; width:auto;}
 	.divtable .trow.head{position: absolute; top: -9999px; left: -9999px;}
 	.divtable .trow .tcell.left{text-align:right;}/* override align for mobile */
@@ -28,9 +30,9 @@ body{font-family:arial, helvetica, sans-serif; font-size:13px; font-weight:norma
 	.divtable .trow .tcell.center{text-align:right;}
 	.divtable .trow .tcell .newLine{margin-top:18px; text-align:left;}
 	.divtable .trow.altColor0{background-color:#fff;}
-	.divtable .trow.altColor1{background-color:#f9fff3;}
-	.divtable .trow.total .tcell{color:#000; background-color:#e0f6cb; border-color:#75be2e}
+	.divtable .trow.altColor1{background-color:#f8f8f8;}
+	.divtable .trow.total .tcell{color:#000; background-color:#e6f7d4; border-color:#75be2e}
 	.divtable .trow.total .tcell.totaltext{text-align:left; color:#fff; font-size:1.2em;font-weight:normal; background-color:#75be2e; border:0;}
-	.divtable .tcell span{position:absolute;top:8px;left:2px;display:block;width:45%;padding-right:12px;white-space:nowrap;text-align:left;font-weight:bold;}
+	.divtable .tcell span{color:#32ad07; font-size:1.2em; position:absolute; top:8px; left:2px; display:block; width:45%; padding-right:12px; white-space:nowrap; text-align:left; font-weight:normal;}
 	.divtable .tcell.hideinResp{display:none;}
 } /* end handheld */

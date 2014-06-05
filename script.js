@@ -21,6 +21,9 @@ $(document).ready(function(){
 				$('.tcell', this).last().addClass('last');
 			});
 			
+			$('.trow' ,tbl).not('.head').first().addClass('first');
+			$('.trow' ,tbl).not('.total').last().addClass('last');
+			
 			
 			function setWidth(){
 				// Distribute width evenly only when in wide view (float state is 'left' in wide view)

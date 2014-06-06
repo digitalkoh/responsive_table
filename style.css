@@ -5,9 +5,10 @@ body{font-family:arial, helvetica, sans-serif; font-size:13px; font-weight:norma
 
 /* Responsive DIV TABLE */
 #wrapper{width:90%; margin:45px auto;}
-.divtable{float:left; width:100%; border:solid 0px #75be2e; background:#75be2e;}
-.divtable .trow{clear:both; width:100%; float:left; border-top:dotted 1px #75be2e; background:#f9fff3;}
-.divtable .trow.head{background:#e3f5d0; font-weight:normal; font-size:1.2em; color:#32ad07; text-shadow: 1px 1px #fff;}
+.divtable{float:left; width:100%; border:solid 1px #7cabd2; border-radius:4px; background:#1b74c0;}
+.divtable .trow{clear:both; width:100%; float:left; border-bottom:dotted 1px #1b74c0; background:#f3f9ff;}
+.divtable .trow.last{border:0;}
+.divtable .trow.head{background:#cee2f6; font-weight:normal; font-size:1.2em; color:#000; text-shadow: 1px 1px #fff; border-top-right-radius:2px; border-top-left-radius:2px}
 .divtable .trow.head .tcell{height:auto;}
 .divtable .trow .tcell{float:left; padding:12px 8px;}
 .divtable .trow.total{background:transparent}
@@ -17,22 +18,21 @@ body{font-family:arial, helvetica, sans-serif; font-size:13px; font-weight:norma
 @media handheld, only screen and (max-width: 860px) {
 
 	/* Responsive DIV TABLE */
-	.divtable{float:none; width:100%; border:0; font-size:.9em; background:#999;}
-	.divtable .trow{width:100%; float:none; margin-bottom:1px; border-top:0;}
-	.divtable .trow.first{border-top:solid 1px #999}
-	.divtable .trow.last{margin-bottom:0; border-bottom:solid #fff 12px;}
-	.divtable .trow .tcell{position:relative; text-align:right; float:none; padding:8px 4px; border-bottom:dotted 1px #ccc; width:auto;}
+	.divtable{float:none; width:100%; font-size:.9em; background:#bbb;  border:solid 1px #ccc; }
+	.divtable .trow{width:100%; float:none; margin-bottom:2px; border:0;}
+	.divtable .trow.first{border-top-right-radius:2px; border-top-left-radius:2px}
 	.divtable .trow.head{position: absolute; top: -9999px; left: -9999px;}
-	.divtable .trow .tcell.left{text-align:right;}/* override align for mobile */
+	.divtable .trow .tcell{position:relative; text-align:right; float:none; padding:11px 10px; border-bottom:dotted 1px #ccc; width:auto;}
 	.divtable .trow .tcell.left.keepAsLabel{text-align:left; font-weight:bold;}/* another override for labels */
 	.divtable .trow .tcell.left.keepAsLabel.totaltext{text-align:right;}
 	.divtable .trow .tcell.last{border:0;}
-	.divtable .trow .tcell.center{text-align:right;}
 	.divtable .trow .tcell .newLine{margin-top:18px; text-align:left;}
 	.divtable .trow.altColor0{background-color:#fff;}
 	.divtable .trow.altColor1{background-color:#f8f8f8;}
-	.divtable .trow.total .tcell{color:#000; background-color:#e6f7d4; border-color:#75be2e}
-	.divtable .trow.total .tcell.totaltext{text-align:left; color:#fff; font-size:1.2em;font-weight:normal; background-color:#75be2e; border:0;}
-	.divtable .tcell span{color:#32ad07; font-size:1.2em; position:absolute; top:8px; left:2px; display:block; width:45%; padding-right:12px; white-space:nowrap; text-align:left; font-weight:normal;}
+	.divtable .trow.total{margin-bottom:0;}
+	.divtable .trow.total .tcell{color:#000; padding-top:12px; padding-bottom:12px; background-color:#f3f9ff; border-color:#1b74c0}
+	.divtable .trow.total .tcell.totaltext{text-align:left; color:#fff; font-size:1.2em;font-weight:normal; background-color:#1b74c0; border:0;}
+	.divtable .tcell span{color:#095eaa; font-size:1.2em; position:absolute; top:8px; left:8px; display:block; width:45%; padding-right:12px; white-space:nowrap; text-align:left; font-weight:normal;}
 	.divtable .tcell.hideinResp{display:none;}
+	.divtable .tcell.b0{border:0;}
 } /* end handheld */

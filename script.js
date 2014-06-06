@@ -19,6 +19,7 @@ $(document).ready(function(){
 				});
 				
 				$('.tcell', this).last().addClass('last');
+				
 			});
 			
 			$('.trow' ,tbl).not('.head').first().addClass('first');

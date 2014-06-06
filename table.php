@@ -72,7 +72,7 @@
 				<div class="tcell">1,500</div>
 				<div class="tcell">340</div>
 				<div class="tcell lg">$2,090</div>
-				<div class="tcell lg">$18,300</div>
+				<div class="tcell b0 lg">$18,300</div>
 				<div class="tcell hideinResp">&nbsp;</div>
 			</div> <!-- /.trow -->
 		
